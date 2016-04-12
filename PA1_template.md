@@ -67,7 +67,7 @@ with(perday, hist(steps, xlab = "Number of steps",
                   main = "Frequency of total daily step count"))
 ```
 
-![](PA1_template_files/figure-html/stepsperday2-1.png)
+![](figure/stepsperday2-1.png)
 
 Calculate the mean and median of the daily totals.
 
@@ -110,7 +110,7 @@ p4 <- xyplot(steps ~ interval, data = perinterval, type = "l",
 print(p4)
 ```
 
-![](PA1_template_files/figure-html/perintervall2-1.png)
+![](figure/perintervall2-1.png)
 
 Find the 5-minute interval with the maximum average number of steps.
 
@@ -158,7 +158,7 @@ with(perdayfixed, hist(stepsfixed, xlab = "Number of steps",
                   main = "Frequency of total daily step count (fixed)"))
 ```
 
-![](PA1_template_files/figure-html/impute3-1.png)
+![](figure/impute3-1.png)
 
 Calculate the mean and median of the new daily totals.
 
@@ -214,4 +214,4 @@ p8 <- xyplot(steps ~ interval | daytype, data = bydaytype, type = "l",
 print(p8)
 ```
 
-![](PA1_template_files/figure-html/daytype3-1.png)
+![](figure/daytype3-1.png)
